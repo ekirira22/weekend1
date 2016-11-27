@@ -1,0 +1,22 @@
+.header {
+  height: 200px;
+  background-image: url(../img/versions.png);
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+.title{
+  padding: 60px;
+}
+.jumbotron{
+  color: purple;
+}
+#candidate1{
+  float: left;
+}
+#candidate2{
+  float: left;
+}
+#candidates{
+  display: none;
+}
