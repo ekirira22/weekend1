@@ -11,6 +11,18 @@
 .jumbotron{
   color: purple;
 }
+#apology{
+  display: none;
+}
+#part2{
+  display: none;
+}
+#vote{
+  display: none;
+}
+#refer{
+  display: none;
+}
 #candidate1{
   float: left;
 }

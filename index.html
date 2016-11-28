@@ -8,12 +8,33 @@
   </head>
   <body>
     <div class="container">
+
       <div class="header">
         <p>
           <div class="title">VOTE VOTE VOTE!!!!</div>
         </p>
       </div><hr>
-      <div class="jumbotron">
+
+      <div class="container-fluid">
+        <h1>Please tell us your age range</h1>
+        <select class="form-control" id="age">
+          <option value="1">Below 18</option>
+          <option value="2">Above 18</option>
+        </select>
+      </div><br>
+
+      <div class="jumbotron" id="apology">
+        <h2 >We are sorry, underage citizens cannot vote!!</h2>
+      </div>
+
+      <div class="jumbotron" id="part2">
+        <h2>Are you sure you know how to vote</h2>
+        <select class="form-control" id="sure">
+          <option value="3">Yes</option>
+          <option value="4">NO</option>
+        </select>
+      </div>
+      <div class="jumbotron" id="vote">
           <p style="font-size:1.6em">
             Choose between TWO of the following candidates
           </p><br>
@@ -23,20 +44,25 @@
           <p>
             1. DONALD TRUMP <br>
             <img src="img/donald.jpg" height="300" width="400" alt="donald" title="Trump" />
-          </p>
+          </p class="radio">
 
-          <input type="checkbox" id="myradio"><br>
+          <label>
+              <input type="radio" name="flavor" value="trump">Donald Trump
+          </label>
           <p id="hide">Click here to Hide the candidates</p>
           </div>
           <div class="col-mg-6" id="candidate2">
             <p>2. HILLARY CLINTON <br>
             <img src="img/hillary.jpg" height="300" width="400" alt="donald" title="Trump" />
           </p>
-            <input type="checkbox" id="myradio">
+          <p class="radio"><label>
+              <input type="radio" value="hillary">Hillary Clinton
+          </label></p>
           </div>
         </div>
+          <button type="submit" class="btn btn-default btn-large">SUBMIT</button>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id="refer">
       <p>
         If you are still not conversant with the voting process . I will recommend you to the following sites
         <ul style="list-style:none">
